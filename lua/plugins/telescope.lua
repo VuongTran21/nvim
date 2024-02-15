@@ -14,6 +14,12 @@ return {
 						},
 					},
 				},
+				pickers = {
+					find_files = {
+						theme = "dropdown",
+						previewer = true,
+					},
+				},
 			})
 		end,
 	},

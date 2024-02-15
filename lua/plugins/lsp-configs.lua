@@ -37,7 +37,7 @@ return {
 					vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
 					vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
 					vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
-					vim.keymap.set("n", "<C-s>", vim.lsp.buf.signature_help, opts)
+					vim.keymap.set("n", "<leader>ss", vim.lsp.buf.signature_help, opts)
 					vim.keymap.set("n", "<leader>wa", vim.lsp.buf.add_workspace_folder, opts)
 					vim.keymap.set("n", "<leader>wr", vim.lsp.buf.remove_workspace_folder, opts)
 					vim.keymap.set("n", "<leader>wl", function()
