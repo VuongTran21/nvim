@@ -9,7 +9,7 @@ local opts = { noremap = true, silent = true }
 
 -- Directory navigation
 nnoremap("<leader>e", ":Neotree toggle<CR>", opts)
-nnoremap("<leader>b", ":Neotree focus<CR>", opts)
+nnoremap("<leader>b", ":Neotree position=current reveal_file=%:p<CR>", opts)
 
 -- Window & Pane navigation
 nnoremap("<C-h>", "<C-w>h", opts)
