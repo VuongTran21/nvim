@@ -1,9 +1,15 @@
 return {
-    "nvim-neo-tree/neo-tree.nvim",
-    branch = "v3.x",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-      "MunifTanjim/nui.nvim",
-    }
+	"nvim-tree/nvim-tree.lua",
+	version = "*",
+	lazy = false,
+	dependencies = {
+		"nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+	},
+	config = function()
+		require("nvim-tree").setup({
+			view = {
+				width = 50,
+			},
+		})
+	end,
 }
